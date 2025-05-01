@@ -22,11 +22,11 @@ function App() {
     setOffset(offset + 20);
     setSelectedPokemon(null);
   };
-  
+
   const handleBack = () => {
     if (offset >= 20) {
       setOffset(offset - 20);
-      setSelectedPokemon(null); 
+      setSelectedPokemon(null);
     }
   };
 
@@ -46,9 +46,8 @@ function App() {
             key={pokemon.name}
             className="card"
             onClick={() => handlePokemonClick(pokemon.name)}
-            style={{ cursor: "pointer" }}
           >
-            <h3>{pokemon.name}</h3>
+            {pokemon.name}
           </div>
         ))}
       </div>
